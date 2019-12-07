@@ -14,7 +14,7 @@ def median_filter(data, f_size):
 	
 def freq_filter(data, f_size, cutoff):
 	lpf = signal.firwin(f_size, cutoff, window='hamming')
-	return signal.convolve(data, lpf, mode='same')	return f_data
+	return signal.convolve(data, lpf, mode='same')
 
 def readCsv(file):
 	with open (('/home/unmesh/'+ file) , 'r') as l:
